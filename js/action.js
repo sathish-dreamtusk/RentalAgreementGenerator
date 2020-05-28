@@ -245,7 +245,7 @@ function resetThisForm() {
 }
 
 function downloadTemplateDocument() {
-    window.open("https://drive.google.com/uc?id=1ek5_LYQ2tqrEoAzr7-ty1GIy1s1q-fQS&export=download");
+    window.open("https://drive.google.com/uc?id=1ek5_LYQ2tqrEoAzr7-ty1GIy1s1q-fQS&export=download", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
 }
 
 function validateForm() {
