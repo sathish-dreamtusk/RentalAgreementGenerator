@@ -564,6 +564,8 @@ li.init {
   padding: 10px;
   border: none;
   cursor: pointer;
+  text-align: center;
+  margin: auto;
   text-transform: uppercase;
   border-radius: 5px;
   -moz-border-radius: 5px;
