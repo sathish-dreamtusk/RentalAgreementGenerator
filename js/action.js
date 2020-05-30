@@ -325,9 +325,9 @@ function month_name(i) {
 }
 
 function resetThisForm() {
-    gtag('event', 'Form reseted');
     var docs = document.getElementById("register-form");
     docs.reset();
+    gtag('event', 'Form reseted');
 }
 
 function downloadTemplateDocument() {
