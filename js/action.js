@@ -1,3 +1,9 @@
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-168023583-1');
+gtag('event', 'Site Loaded');
+
 function loadFile(url,callback){
     PizZipUtils.getBinaryContent(url,callback);
 }
@@ -166,6 +172,7 @@ function generateOnFile() {
             doc=new window.docxtemplater(zip);
         } catch(error) {
             // Catch compilation errors (errors caused by the compilation of the template : misplaced tags)
+            gtag('event', 'Form Submit Error');
             errorHandler(error);
         }
 
@@ -265,7 +272,7 @@ function generateOnFile() {
         } else {
             saveAs(out, "Rental Agreement.docx")
         }
-        
+        gtag('event', 'Form Submited');
         resetThisForm();
     }
 }
@@ -318,12 +325,13 @@ function month_name(i) {
 }
 
 function resetThisForm() {
+    gtag('event', 'Form reseted');
     var docs = document.getElementById("register-form");
     docs.reset();
 }
 
 function downloadTemplateDocument() {
-    window.open("https://drive.google.com/uc?id=1ek5_LYQ2tqrEoAzr7-ty1GIy1s1q-fQS&export=download", '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    gtag('event', 'Downloaded Form');
 }
 
 function validateForm() {
