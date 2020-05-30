@@ -1,8 +1,9 @@
 # RentalAgreementGenerator
 Generate Rental Agreement
 
-Value | Repalcement Field Name |
-
+# Key points
+Key | Replacement Field Name |
+--- | --- |
 {doc_location} | Document Location |
 {doc_day} | Document Day |
 {doc_landlord_detail} | Landlord Name |
